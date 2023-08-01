@@ -1,0 +1,15 @@
+https://api.instagram.com/oauth/authorize
+  ?client_id=1276731266302451
+  &redirect_uri=https://ig-api-test-deploy.vercel.app/
+  &scope=user_profile,user_media
+  &response_type=code
+
+curl -X POST \
+  https://api.instagram.com/oauth/access_token \
+  -F client_id=1276731266302451 \
+  -F client_secret=691495b3b678fad88ebb5ef73c88dd8b \
+  -F grant_type=authorization_code \
+  -F redirect_uri=https://ig-api-test-deploy.vercel.app/ \
+  -F code=AQD6peo4AWy5tdfvwki-QMMwryuVztS3gRqBPJLfjzgYEBzm8sP-9C6R3P9G3xzt8vP41MjVHJj3AFm9hQ_zNaq0PvEgU3jTjiL_0TzAnoV0h7ZGVdve2ZLoqQqJ4CfSSHvxr6sBBc-fWExgfUZhxWXDWS64BmMLQg2RGCcLA8Qr2x9S4C477cAE2N_YokVCBFigNEF8HgHG5eH_bgvfFR3qBaW9LXXBMLedEy0a5zG7wA
+
+curl -i -X GET 'https://graph.instagram.com/24291891907076892?fields=id,username&access_token=IGQVJVaVFHYmRFTzdlVnJkNnF3c2R1ODlVOFA1cUVIa1RlS2hzSm1aTzBrbXR0LWdmc1VZAdVctU2c4cTZA0NldUMWJxUDFJRFFvLXBFYVk1TENCNVlEcXp5dU0xcWg4Nmxkb1FKQVlWRlJWVUhwOTVVVAZDZD'
