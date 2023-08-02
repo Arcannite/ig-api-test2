@@ -26,7 +26,13 @@ export default function Page({ posts }) {
       <div className='grid grid-cols-3 max-w-6xl bg-slate-500'>
         {posts.map( (post) => (
           <div key={post["media"]["id"]}>
-            <Image src={post["media"]["media_url"]} width={300} height={300}/>
+            <Image
+              src={post["media"]["media_url"]}
+              alt={post["media"]["media_url"]}
+              width={300}
+              height={300}
+              unoptimized={true}
+            />
             <div> {post["caption"]} </div>
           </div>
         ))}
