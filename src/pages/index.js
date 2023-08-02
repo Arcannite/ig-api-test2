@@ -34,6 +34,7 @@ export default function Page({ posts }) {
               unoptimized={true}
             />
             <div> {post["caption"]} </div>
+            1
           </div>
         ))}
       </div>
